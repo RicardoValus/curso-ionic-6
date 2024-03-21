@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Botões (ion-button)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button>Default</ion-button>
+
+  <ion-button href="https://ionicframework.com/">Site Ionic</ion-button>
+
+  <ion-button color="danger">Colorido</ion-button>
+
+  <ion-button expand="full">Button Full</ion-button>
+  <ion-button expand="block">Button Block</ion-button>
+  <ion-button expand="round">Button Round</ion-button>
+
+  <ion-button fill="outline">Button Outline</ion-button>
+
+  <ion-button>
+    Button Icon
+    <ion-icon slot="start" name="add"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+
+  <br>
+  <h3>Tamanhos</h3>
+  <ion-button size="small"></ion-button>
+  <ion-button></ion-button>
+  <ion-button size="large"></ion-button>
+
+  <ion-button (click)="enviar()">Botão com evento Click (ts)</ion-button>
+</ion-content>

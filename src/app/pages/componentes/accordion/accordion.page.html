@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Acordeão (ion-accordion)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-accordion-group>
+
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>1° Item > Label</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Div</div>
+    </ion-accordion>
+
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>2° Item > Label</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Div</div>
+    </ion-accordion>
+
+    <ion-accordion value="third" toggle-icon="arrow-down-circle">
+      <ion-item slot="header" color="light">
+        <ion-label>3° Item > Label</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Div</div>
+    </ion-accordion>
+
+  </ion-accordion-group>
+
+</ion-content>

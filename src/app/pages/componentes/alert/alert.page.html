@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Alerta (alert)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h3>Abra o console</h3>
+
+  <ion-button (click)="alertComum()" expand="block">Alert Comum</ion-button>
+  <ion-button (click)="alert()" expand="block">Alert</ion-button>
+  <ion-button (click)="multipleButtons()" expand="block">Multiple Buttons Alert</ion-button>
+  <ion-button (click)="confirm()" expand="block">Confirm</ion-button>
+  <ion-button (click)="prompt()" expand="block">Prompt</ion-button>
+
+</ion-content>
